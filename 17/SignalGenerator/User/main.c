@@ -61,8 +61,9 @@ extern uint8_t g_adc_dma_sta;               /* DMA����״̬��־, 0,δ
 uint16_t freq = 2000;
 uint16_t Vout = 50;
 uint16_t dacval = 0;
-uint16_t amp = 20;
+uint16_t amp = 759;
 uint8_t sweep = 0;
+uint8_t fast_sweep = 0;
 int main(void) {           // 7???? (0~127)
     int gain = 2047;       // ???? (???)
 		int att;
@@ -92,12 +93,14 @@ int main(void) {           // 7???? (0~127)
 						AD9854_SetSine(freq * 10000, gain);
 					  PE4302_Set_Attenuation(att); // Set attenuation to i dB
             DAC_SetChannel1Data(DAC_Align_12b_R, amp);
+            delay_ms(100);
 
 				for (;sweep != 0 && freq <= 4000; freq+=100) {
 						calc_Vol(freq,Vout,&gain,&att);
 						AD9854_SetSine(freq * 10000, gain);
 					  PE4302_Set_Attenuation(att); // Set attenuation to i dB
-						SendFreq(freq);
+            DAC_SetChannel1Data(DAC_Align_12b_R, amp);
+						SendFreq(freq/100);
 						delay_ms(50);             
 						LED0_TOGGLE();            
         }
@@ -106,10 +109,23 @@ int main(void) {           // 7???? (0~127)
 						calc_Vol(freq,Vout,&gain,&att);
 						AD9854_SetSine(freq * 10000, gain);
 					  PE4302_Set_Attenuation(att); // Set attenuation to i dB
-						SendFreq(freq);
+            DAC_SetChannel1Data(DAC_Align_12b_R, amp);
+						SendFreq(freq/100);
             delay_ms(50);
             LED0_TOGGLE();
         }
+			 if (fast_sweep != 0){
+				 for (freq=0;fast_sweep != 0 && freq <= 4000; freq+=100) {
+							calc_Vol(freq,Vout,&gain,&att);
+							AD9854_SetSine(freq * 10000, gain);
+							PE4302_Set_Attenuation(att); // Set attenuation to i dB
+							DAC_SetChannel1Data(DAC_Align_12b_R, amp);
+							SendFreq(freq/100);
+							delay_ms(10);
+							LED0_TOGGLE();
+					}
+				fast_sweep = 0;
+			}
     }
 }
 // set the callback function

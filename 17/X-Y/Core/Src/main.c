@@ -146,7 +146,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 			UART_index=0;
 			freq = UART_Buffer[0] | UART_Buffer[1] << 8;
 			// Update curve buffer
-			update_curve_buffer(freq);
+			update_curve_buffer(freq/100);
 					printf("buf[0]=%d\nstatus=%d\n", Buffer[0], UART_sta);
 		}
 		else if(UART_sta==1)UART_Buffer[UART_index++]=Buffer[0];

@@ -1,6 +1,6 @@
 Dependencies for Project 'AD9854', Target 'STM32_CharLCD': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARM_Compiler_5.06u7
-F (..\User\main.c)(0x6802221D)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\CMSIS -I ..\CMSIS\CoreSupport -I ..\CMSIS\DeviceSupport\STM32F10x -I ..\STM32F10x_StdPeriph_Driver\inc -I ..\User\Delay -I ..\User\CharLCD -I ..\User\PeripheralInit -I ..\SYSTEM -I ..\BSP\RDA5820 -I ..\BSP\DMA -I ..\BSP\ADC -I ..\SYSTME\sys -I ..\-I.\RTE\_STM32_CharLCD-ID:\keilpackage\Keil\STM32F1xx_DFP\2.4.1\Device\Include-ID:\keilpackage\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="541" -DSTM32F10X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\obj\main.o --omf_browse .\obj\main.crf --depend .\obj\main.d)
+F (..\User\main.c)(0x68039326)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\CMSIS -I ..\CMSIS\CoreSupport -I ..\CMSIS\DeviceSupport\STM32F10x -I ..\STM32F10x_StdPeriph_Driver\inc -I ..\User\Delay -I ..\User\CharLCD -I ..\User\PeripheralInit -I ..\SYSTEM -I ..\BSP\RDA5820 -I ..\BSP\DMA -I ..\BSP\ADC -I ..\SYSTME\sys -I ..\-I.\RTE\_STM32_CharLCD-ID:\keilpackage\Keil\STM32F1xx_DFP\2.4.1\Device\Include-ID:\keilpackage\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="541" -DSTM32F10X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\obj\main.o --omf_browse .\obj\main.crf --depend .\obj\main.d)
 I (..\CMSIS\DeviceSupport\STM32F10x\stm32f10x.h)(0x52FD8CE8)
 I (..\CMSIS\CoreSupport\core_cm3.h)(0x52FD8CE8)
 I (D:\keil\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
@@ -22,7 +22,7 @@ I (..\./BSP/LED/led.h)(0x64ABAEFC)
 I (..\User\launchStation.h)(0x67D17253)
 I (..\./BSP/DAC/dac.h)(0x67F50DF6)
 I (D:\keilpackage\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\inc\stm32f10x_dac.h)(0x67D7EBD4)
-I (..\User\AnalysisCmd.h)(0x6801B603)
+I (..\User\AnalysisCmd.h)(0x6803905E)
 I (..\./BSP/KEY/key.h)(0x64ABAEFD)
 I (..\./BSP/PE4302/pe4302.h)(0x67F5019F)
 F (..\User\CharLCD.c)(0x543A0EEA)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\CMSIS -I ..\CMSIS\CoreSupport -I ..\CMSIS\DeviceSupport\STM32F10x -I ..\STM32F10x_StdPeriph_Driver\inc -I ..\User\Delay -I ..\User\CharLCD -I ..\User\PeripheralInit -I ..\SYSTEM -I ..\BSP\RDA5820 -I ..\BSP\DMA -I ..\BSP\ADC -I ..\SYSTME\sys -I ..\-I.\RTE\_STM32_CharLCD-ID:\keilpackage\Keil\STM32F1xx_DFP\2.4.1\Device\Include-ID:\keilpackage\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="541" -DSTM32F10X_HD -D_RTE_ -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\obj\charlcd.o --omf_browse .\obj\charlcd.crf --depend .\obj\charlcd.d)

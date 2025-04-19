@@ -8,6 +8,7 @@
 #define CMD_HEADER 0x05
 #define END 0xfe
 #define FREQ 0xee
+#define FAST_SWEEP 0xaa
 #define VOUT 0xef
 #define SWEEP 0xde
 #define AMP 0xdd
@@ -16,6 +17,7 @@ extern uint16_t freq;
 extern uint16_t Vout;
 extern uint16_t amp;
 extern uint8_t sweep;
+extern uint8_t fast_sweep;
 float calc_gain(int frequ){
 	return 6.872*(frequ  - 100)/100 + 750;
 }
@@ -109,6 +111,11 @@ void SendFreq(u16 freq){
 		printf("%c",end);
 }
 
+void ConvertAmplitude(u16* gain){
+  amp = (u16)((13.865**gain+334.5) / 3300.0 * 4095.0);
+//  printf("%d",(int)amp);
+}
+
 void AnalysisCmd(u8* payload){
     u16* data= (u16*)(payload+1);
     if (payload[0]==FREQ) {
@@ -116,17 +123,14 @@ void AnalysisCmd(u8* payload){
 			SendFreq(*data);
 		}
     if (payload[0]==AMP){
-       amp = *data;
-      //  ConvertAmplitude(amp);
+      ConvertAmplitude(data);
       }
     if (payload[0]==VOUT) Vout = *data;
 		if (payload[0]==SWEEP) sweep = 1 - sweep;
+		if (payload[0]==FAST_SWEEP) fast_sweep = 1 - fast_sweep;
+		
 }
 
-void ConvertAmplitude(u16* amp){
-  u16 _amp = (u16)(*amp / 40.0 * 4095.0);
-  amp = &_amp;
-  printf("%d",(int)amp);
-}
+
 
 #endif
