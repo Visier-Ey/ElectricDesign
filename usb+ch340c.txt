@@ -1,0 +1,12 @@
+CH340C 的 D+/D- 和 TXD/RXD 分别用于不同的工作模式
+模式	使用的引脚	用途
+USB 转串口（默认）	D+/D-（接 PC USB）
+TXD/RXD（接 MCU UART）	将 USB 信号转换为 TTL 串口，用于烧录、调试（如 ESP32/STM32）
+USB 设备模式（特殊）	D+/D-（直接通信）
+TXD/RXD（可能不用）
+
+
+ESP32-C3 的 USB 引脚默认对应 GPIO18 (DN) 和 GPIO19 (DP)无法烧录(直连）
+
+在 ESP32-C3 中，GPIO18 和 GPIO19 默认用于 USB 功能（DN/DP），但根据具体配置和硬件设计，
+它们确实可以在 不启用 USB 时 复用为普通 GPIO 或其他功能。

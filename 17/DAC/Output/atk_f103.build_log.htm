@@ -1,0 +1,130 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.41.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1, 1, LIC=X96CK-Z5DMA-KPSZY-ILV5P-1HVET-0B83B
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.41.0.0
+Toolchain Path:  D:\keil\ARM\ARM_Compiler_5.06u7\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.41.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      CMSIS_AGDI.dll V1.33.21.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\Users\Euryt\Desktop\17\DAC\Projects\MDK-ARM\atk_f103.uvprojx
+Project File Date:  04/08/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\keil\ARM\ARM_Compiler_5.06u7\Bin'
+Rebuild target 'DAC'
+assembling startup_stm32f103xe.s...
+compiling main.c...
+..\..\Drivers\./BSP/USER/Delay.h(25): error:  #20: identifier "u8" is undefined
+  extern void Delay_ns (u8 t);			// ns延时
+..\..\Drivers\./BSP/USER/Delay.h(26): error:  #20: identifier "u8" is undefined
+  extern void Delay_1us (u8 t);							// 延时时基:1us
+..\..\Drivers\./BSP/USER/Delay.h(27): error:  #20: identifier "u16" is undefined
+  extern void Delay_2us (u16 t);							// 延时时基:2us
+..\..\Drivers\./BSP/USER/Delay.h(28): error:  #20: identifier "u8" is undefined
+  extern void Delay_10us (u8 t);   					// 延时时基:10us
+..\..\Drivers\./BSP/USER/Delay.h(30): error:  #20: identifier "u8" is undefined
+  extern void Delay_250us (u8 t);  // 延时时基:250us
+..\..\Drivers\./BSP/USER/Delay.h(31): error:  #20: identifier "u8" is undefined
+  extern void Delay_5ms (u8 t);							// 延时时基:5ms
+..\..\Drivers\./BSP/USER/Delay.h(32): error:  #20: identifier "u8" is undefined
+  extern void Delay_1ms (u8 t);		// 延时时基:1ms
+..\..\Drivers\./BSP/USER/Delay.h(33): error:  #20: identifier "u8" is undefined
+  extern void Delay_50ms (u8 t);		// 延时时基:50ms
+..\..\Drivers\./BSP/USER/Delay.h(34): error:  #20: identifier "__IO" is undefined
+  extern void Delay(__IO uint32_t nCount);
+..\..\Drivers\./BSP/USER/Delay.h(34): error:  #18: expected a ")"
+  extern void Delay(__IO uint32_t nCount);
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(50): warning:  #47-D: incompatible redefinition of macro "__CM3_REV"  (declared at line 167 of "D:\keilpackage\Keil\STM32F1xx_DFP\2.4.1\Device\Include\stm32f10x.h")
+  #define __CM3_REV                  0x0200U  /*!< Core Revision r2p0                           */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(51): warning:  #47-D: incompatible redefinition of macro "__MPU_PRESENT"  (declared at line 165 of "D:\keilpackage\Keil\STM32F1xx_DFP\2.4.1\Device\Include\stm32f10x.h")
+   #define __MPU_PRESENT             0U       /*!< Other STM32 devices does not provide an MPU  */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(52): warning:  #47-D: incompatible redefinition of macro "__NVIC_PRIO_BITS"  (declared at line 168 of "D:\keilpackage\Keil\STM32F1xx_DFP\2.4.1\Device\Include\stm32f10x.h")
+  #define __NVIC_PRIO_BITS           4U       /*!< STM32 uses 4 Bits for the Priority Levels    */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(53): warning:  #47-D: incompatible redefinition of macro "__Vendor_SysTickConfig"  (declared at line 169 of "D:\keilpackage\Keil\STM32F1xx_DFP\2.4.1\Device\Include\stm32f10x.h")
+  #define __Vendor_SysTickConfig     0U       /*!< Set to 1 if different SysTick Config is used */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(72): error:  #101: "NonMaskableInt_IRQn" has already been declared in the current scope
+    NonMaskableInt_IRQn         = -14,    /*!< 2 Non Maskable Interrupt                             */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(74): error:  #101: "MemoryManagement_IRQn" has already been declared in the current scope
+    MemoryManagement_IRQn       = -12,    /*!< 4 Cortex-M3 Memory Management Interrupt              */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(75): error:  #101: "BusFault_IRQn" has already been declared in the current scope
+    BusFault_IRQn               = -11,    /*!< 5 Cortex-M3 Bus Fault Interrupt                      */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(76): error:  #101: "UsageFault_IRQn" has already been declared in the current scope
+    UsageFault_IRQn             = -10,    /*!< 6 Cortex-M3 Usage Fault Interrupt                    */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(77): error:  #101: "SVCall_IRQn" has already been declared in the current scope
+    SVCall_IRQn                 = -5,     /*!< 11 Cortex-M3 SV Call Interrupt                       */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(78): error:  #101: "DebugMonitor_IRQn" has already been declared in the current scope
+    DebugMonitor_IRQn           = -4,     /*!< 12 Cortex-M3 Debug Monitor Interrupt                 */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(79): error:  #101: "PendSV_IRQn" has already been declared in the current scope
+    PendSV_IRQn                 = -2,     /*!< 14 Cortex-M3 Pend SV Interrupt                       */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(80): error:  #101: "SysTick_IRQn" has already been declared in the current scope
+    SysTick_IRQn                = -1,     /*!< 15 Cortex-M3 System Tick Interrupt                   */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(83): error:  #101: "WWDG_IRQn" has already been declared in the current scope
+    WWDG_IRQn                   = 0,      /*!< Window WatchDog Interrupt                            */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(84): error:  #101: "PVD_IRQn" has already been declared in the current scope
+    PVD_IRQn                    = 1,      /*!< PVD through EXTI Line detection Interrupt            */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(85): error:  #101: "TAMPER_IRQn" has already been declared in the current scope
+    TAMPER_IRQn                 = 2,      /*!< Tamper Interrupt                                     */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(86): error:  #101: "RTC_IRQn" has already been declared in the current scope
+    RTC_IRQn                    = 3,      /*!< RTC global Interrupt                                 */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(87): error:  #101: "FLASH_IRQn" has already been declared in the current scope
+    FLASH_IRQn                  = 4,      /*!< FLASH global Interrupt                               */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(88): error:  #101: "RCC_IRQn" has already been declared in the current scope
+    RCC_IRQn                    = 5,      /*!< RCC global Interrupt                                 */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(89): error:  #101: "EXTI0_IRQn" has already been declared in the current scope
+    EXTI0_IRQn                  = 6,      /*!< EXTI Line0 Interrupt                                 */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(90): error:  #101: "EXTI1_IRQn" has already been declared in the current scope
+    EXTI1_IRQn                  = 7,      /*!< EXTI Line1 Interrupt                                 */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(91): error:  #101: "EXTI2_IRQn" has already been declared in the current scope
+    EXTI2_IRQn                  = 8,      /*!< EXTI Line2 Interrupt                                 */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(92): error:  #101: "EXTI3_IRQn" has already been declared in the current scope
+    EXTI3_IRQn                  = 9,      /*!< EXTI Line3 Interrupt                                 */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(93): error:  #101: "EXTI4_IRQn" has already been declared in the current scope
+    EXTI4_IRQn                  = 10,     /*!< EXTI Line4 Interrupt                                 */
+..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h(94): error:  #101: "DMA1_Channel1_IRQn" has already been declared in the current scope
+    DMA1_Channel1_IRQn          = 11,     /*!< DMA1 Channel 1 global Interrupt                      */
+..\..\User\main.c: 4 warnings, 30 errors
+compiling adc3.c...
+compiling dac.c...
+compiling key.c...
+compiling usmart_port.c...
+compiling usmart_str.c...
+compiling usart.c...
+compiling led.c...
+compiling delay.c...
+compiling usmart_config.c...
+compiling usmart.c...
+compiling sys.c...
+compiling lcd.c...
+"..\..\Output\atk_f103.axf" - 30 Error(s), 4 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil::STM32F1xx_DFP@2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  D:/keilpackage/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

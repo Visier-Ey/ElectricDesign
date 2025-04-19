@@ -1,0 +1,13 @@
+.\obj\dac.o: ..\BSP\DAC\dac.c
+.\obj\dac.o: ..\./BSP/DAC/dac.h
+.\obj\dac.o: ..\./SYSTEM/sys/sys.h
+.\obj\dac.o: ..\CMSIS\DeviceSupport\STM32F10x\stm32f10x.h
+.\obj\dac.o: ..\CMSIS\CoreSupport\core_cm3.h
+.\obj\dac.o: D:\keil\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
+.\obj\dac.o: ..\CMSIS\DeviceSupport\STM32F10x\system_stm32f10x.h
+.\obj\dac.o: ..\CMSIS\DeviceSupport\STM32F10x\stm32f10x_conf.h
+.\obj\dac.o: ..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h
+.\obj\dac.o: ..\CMSIS\DeviceSupport\STM32F10x\stm32f10x.h
+.\obj\dac.o: ..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h
+.\obj\dac.o: ..\STM32F10x_StdPeriph_Driver\inc\misc.h
+.\obj\dac.o: ..\./SYSTEM/delay/delay.h

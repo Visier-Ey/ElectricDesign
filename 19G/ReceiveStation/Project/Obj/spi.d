@@ -1,0 +1,12 @@
+.\obj\spi.o: ..\BSP\SPI\spi.c
+.\obj\spi.o: ..\./BSP/SPI/spi.h
+.\obj\spi.o: ..\./SYSTEM/sys/sys.h
+.\obj\spi.o: ..\CMSIS\DeviceSupport\STM32F10x\stm32f10x.h
+.\obj\spi.o: ..\CMSIS\CoreSupport\core_cm3.h
+.\obj\spi.o: D:\keil\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
+.\obj\spi.o: ..\CMSIS\DeviceSupport\STM32F10x\system_stm32f10x.h
+.\obj\spi.o: ..\CMSIS\DeviceSupport\STM32F10x\stm32f10x_conf.h
+.\obj\spi.o: ..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h
+.\obj\spi.o: ..\CMSIS\DeviceSupport\STM32F10x\stm32f10x.h
+.\obj\spi.o: ..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h
+.\obj\spi.o: ..\STM32F10x_StdPeriph_Driver\inc\misc.h

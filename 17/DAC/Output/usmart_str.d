@@ -1,0 +1,15 @@
+..\..\output\usmart_str.o: ..\..\Middlewares\USMART\usmart_str.c
+..\..\output\usmart_str.o: ..\..\Middlewares\./USMART/usmart.h
+..\..\output\usmart_str.o: ..\..\Middlewares\./USMART/usmart_port.h
+..\..\output\usmart_str.o: ..\..\Drivers\./SYSTEM/sys/sys.h
+..\..\output\usmart_str.o: ..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h
+..\..\output\usmart_str.o: ..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h
+..\..\output\usmart_str.o: ..\..\Drivers\CMSIS\Include\core_cm3.h
+..\..\output\usmart_str.o: D:\keil\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
+..\..\output\usmart_str.o: ..\..\Drivers\CMSIS\Include\cmsis_version.h
+..\..\output\usmart_str.o: ..\..\Drivers\CMSIS\Include\cmsis_compiler.h
+..\..\output\usmart_str.o: ..\..\Drivers\CMSIS\Include\cmsis_armcc.h
+..\..\output\usmart_str.o: ..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h
+..\..\output\usmart_str.o: ..\..\Drivers\./SYSTEM/usart/usart.h
+..\..\output\usmart_str.o: D:\keil\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdio.h
+..\..\output\usmart_str.o: ..\..\Middlewares\./USMART/usmart_str.h

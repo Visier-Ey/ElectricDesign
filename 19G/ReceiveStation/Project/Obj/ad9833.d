@@ -1,0 +1,13 @@
+.\obj\ad9833.o: ..\BSP\AD9833\ad9833.c
+.\obj\ad9833.o: ..\BSP\AD9833\ad9833.h
+.\obj\ad9833.o: D:\keil\ARM\ARM_Compiler_5.06u7\Bin\..\include\math.h
+.\obj\ad9833.o: ..\./SYSTEM/sys/sys.h
+.\obj\ad9833.o: ..\CMSIS\DeviceSupport\STM32F10x\stm32f10x.h
+.\obj\ad9833.o: ..\CMSIS\CoreSupport\core_cm3.h
+.\obj\ad9833.o: D:\keil\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
+.\obj\ad9833.o: ..\CMSIS\DeviceSupport\STM32F10x\system_stm32f10x.h
+.\obj\ad9833.o: ..\CMSIS\DeviceSupport\STM32F10x\stm32f10x_conf.h
+.\obj\ad9833.o: ..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h
+.\obj\ad9833.o: ..\CMSIS\DeviceSupport\STM32F10x\stm32f10x.h
+.\obj\ad9833.o: ..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h
+.\obj\ad9833.o: ..\STM32F10x_StdPeriph_Driver\inc\misc.h

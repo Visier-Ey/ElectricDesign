@@ -1,0 +1,102 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.41.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1, 1, LIC=X96CK-Z5DMA-KPSZY-ILV5P-1HVET-0B83B
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.41.0.0
+Toolchain Path:  D:\keil\ARM\ARM_Compiler_5.06u7\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.41.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.3.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\Users\Euryt\Desktop\17\SignalGenerator\Project\AD9854.uvprojx
+Project File Date:  04/10/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\keil\ARM\ARM_Compiler_5.06u7\Bin'
+Rebuild target 'STM32_CharLCD'
+Validate Run Time Environment: errors/warnings detected:
+'Keil::Device:StdPeriph Drivers:DAC@3.6.0': warning #515: Additional software components required
+ require CMSIS:CORE: Select component from list
+    'ARM::CMSIS:CORE'
+ require Device:StdPeriph Drivers:RCC: Select component from list
+    'Keil::Device:StdPeriph Drivers:RCC'
+ require Device:StdPeriph Drivers:Framework: Select component from list
+    'Keil::Device:StdPeriph Drivers:Framework'
+Note: source file '..\SYSTEM\delay\delay.c' - object file renamed from '.\Obj\delay.o' to '.\Obj\delay_1.o'.
+compiling pe4302.c...
+..\BSP\PE4302\pe4302.h(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\PE4302\pe4302.c(39): warning:  #1-D: last line of file ends without a newline
+  }
+..\BSP\PE4302\pe4302.c: 2 warnings, 0 errors
+compiling main.c...
+..\User\launchStation.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\./BSP/PE4302/pe4302.h(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\User\main.c(117): warning:  #177-D: variable "len"  was declared but never referenced
+  	uint8_t len = g_usart_rx_sta & 0x3fff;
+..\User\main.c: 3 warnings, 0 errors
+assembling startup_stm32f10x_hd.s...
+compiling AD9854.c...
+..\User\AD9854.c(210): warning:  #1134-D: literal treated as "long long"
+  	High16 = (int)(Freq/4294967295);                  //2^32 = 4294967295
+..\User\AD9854.c(211): warning:  #1134-D: literal treated as "long long"
+  	Freq -= (double)High16*4294967295;
+..\User\AD9854.c: 2 warnings, 0 errors
+compiling core_cm3.c...
+compiling system_stm32f10x.c...
+compiling dma.c...
+compiling delay.c...
+compiling sys.c...
+compiling adc.c...
+compiling led.c...
+compiling Delay.c...
+compiling stm32f10x_dac.c...
+compiling myiic.c...
+compiling stm32f10x_gpio.c...
+compiling key.c...
+compiling CharLCD.c...
+compiling usart.c...
+compiling misc.c...
+compiling stm32f10x_rcc.c...
+linking...
+Program Size: Code=6088 RO-data=336 RW-data=28 ZI-data=3028  
+FromELF: creating hex file...
+".\Obj\AD9854.axf" - 0 Error(s), 7 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil::STM32F1xx_DFP@2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: DAC Version: 3.6.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_STM32_CharLCD
+  D:/keilpackage/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+  D:/keilpackage/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: Keil::Device:StdPeriph Drivers:DAC@3.6.0
+      Include file:  Device/StdPeriph_Driver/inc/stm32f10x_dac.h
+      Source file:   Device/StdPeriph_Driver/src/stm32f10x_dac.c
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>

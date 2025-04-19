@@ -1,0 +1,12 @@
+..\..\output\adc3.o: ..\..\Drivers\BSP\ADC\adc3.c
+..\..\output\adc3.o: ..\..\Drivers\./BSP/ADC/adc3.h
+..\..\output\adc3.o: ..\..\Drivers\./SYSTEM/sys/sys.h
+..\..\output\adc3.o: ..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h
+..\..\output\adc3.o: ..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h
+..\..\output\adc3.o: ..\..\Drivers\CMSIS\Include\core_cm3.h
+..\..\output\adc3.o: D:\keil\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
+..\..\output\adc3.o: ..\..\Drivers\CMSIS\Include\cmsis_version.h
+..\..\output\adc3.o: ..\..\Drivers\CMSIS\Include\cmsis_compiler.h
+..\..\output\adc3.o: ..\..\Drivers\CMSIS\Include\cmsis_armcc.h
+..\..\output\adc3.o: ..\..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h
+..\..\output\adc3.o: ..\..\Drivers\./SYSTEM/delay/delay.h
