@@ -1,0 +1,73 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.42.0.0
+Copyright (C) 2025 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Isaac Huang, NULL, LIC=TA39H-WNJYQ-LVK1I-TI204-41UVA-JHPDZ
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.42.0.0
+Toolchain Path:  D:\Applications\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.42.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.3.0.0
+Dialog DLL:      TCM.DLL V1.56.6.0
+ 
+<h2>Project:</h2>
+C:\Users\huang\Desktop\17\SignalGenerator\Project\AD9854.uvprojx
+Project File Date:  04/10/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Applications\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin'
+Build target 'STM32_CharLCD'
+Validate Run Time Environment: errors/warnings detected:
+'Keil::Device:StdPeriph Drivers:DAC@3.6.0': warning #515: Additional software components required
+ require CMSIS:CORE: Select component from list
+    'ARM::CMSIS:CORE'
+ require Device:StdPeriph Drivers:RCC: Select component from list
+    'Keil::Device:StdPeriph Drivers:RCC'
+ require Device:StdPeriph Drivers:Framework: Select component from list
+    'Keil::Device:StdPeriph Drivers:Framework'
+Note: source file '..\SYSTEM\delay\delay.c' - object file renamed from '.\Obj\delay.o' to '.\Obj\delay_1.o'.
+compiling main.c...
+..\User\launchStation.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\./BSP/PE4302/pe4302.h(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\User\main.c(134): warning:  #177-D: variable "len"  was declared but never referenced
+  	uint8_t len = g_usart_rx_sta & 0x3fff;
+..\User\main.c: 3 warnings, 0 errors
+linking...
+Program Size: Code=7572 RO-data=400 RW-data=36 ZI-data=3028  
+FromELF: creating hex file...
+".\Obj\AD9854.axf" - 0 Error(s), 3 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil::STM32F1xx_DFP@2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: DAC Version: 3.6.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_STM32_CharLCD
+  D:/Applications/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+  D:/Applications/Keil_v5/ARM/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: Keil::Device:StdPeriph Drivers:DAC@3.6.0
+      Include file:  Device/StdPeriph_Driver/inc/stm32f10x_dac.h
+      Source file:   Device/StdPeriph_Driver/src/stm32f10x_dac.c
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>

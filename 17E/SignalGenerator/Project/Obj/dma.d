@@ -1,0 +1,13 @@
+.\obj\dma.o: ..\BSP\DMA\dma.c
+.\obj\dma.o: ..\./BSP/DMA/dma.h
+.\obj\dma.o: ..\./SYSTEM/sys/sys.h
+.\obj\dma.o: ..\CMSIS\DeviceSupport\STM32F10x\stm32f10x.h
+.\obj\dma.o: ..\CMSIS\CoreSupport\core_cm3.h
+.\obj\dma.o: D:\Applications\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
+.\obj\dma.o: ..\CMSIS\DeviceSupport\STM32F10x\system_stm32f10x.h
+.\obj\dma.o: ..\CMSIS\DeviceSupport\STM32F10x\stm32f10x_conf.h
+.\obj\dma.o: ..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h
+.\obj\dma.o: ..\CMSIS\DeviceSupport\STM32F10x\stm32f10x.h
+.\obj\dma.o: ..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h
+.\obj\dma.o: ..\STM32F10x_StdPeriph_Driver\inc\misc.h
+.\obj\dma.o: ..\./SYSTEM/delay/delay.h
