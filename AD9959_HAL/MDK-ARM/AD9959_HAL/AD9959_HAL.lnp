@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"ad9959_hal\startup_stm32f103xe.o"
+"ad9959_hal\main.o"
+"ad9959_hal\gpio.o"
+"ad9959_hal\stm32f1xx_it.o"
+"ad9959_hal\stm32f1xx_hal_msp.o"
+"ad9959_hal\ad9959_outset.o"
+"ad9959_hal\ad9959.o"
+"ad9959_hal\stm32f1xx_hal_gpio_ex.o"
+"ad9959_hal\stm32f1xx_hal_tim.o"
+"ad9959_hal\stm32f1xx_hal_tim_ex.o"
+"ad9959_hal\stm32f1xx_hal.o"
+"ad9959_hal\stm32f1xx_hal_rcc.o"
+"ad9959_hal\stm32f1xx_hal_rcc_ex.o"
+"ad9959_hal\stm32f1xx_hal_gpio.o"
+"ad9959_hal\stm32f1xx_hal_dma.o"
+"ad9959_hal\stm32f1xx_hal_cortex.o"
+"ad9959_hal\stm32f1xx_hal_pwr.o"
+"ad9959_hal\stm32f1xx_hal_flash.o"
+"ad9959_hal\stm32f1xx_hal_flash_ex.o"
+"ad9959_hal\stm32f1xx_hal_exti.o"
+"ad9959_hal\system_stm32f1xx.o"
+--strict --scatter "AD9959_HAL\AD9959_HAL.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "AD9959_HAL.map" -o AD9959_HAL\AD9959_HAL.axf
