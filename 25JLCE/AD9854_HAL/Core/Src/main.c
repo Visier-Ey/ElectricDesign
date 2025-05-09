@@ -42,7 +42,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-
+#define PRODUCTION_MODE 0
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -65,7 +65,6 @@ uint16_t mainFreqAM = 1000;
 uint16_t mainFreqFM = 1000;
 uint16_t up=1000;
 uint16_t down=1000;
-float maxOffset = 0.f;
 uint16_t mode = 0;
 
 
@@ -109,16 +108,13 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
   if (huart->Instance == USART1)
   {
-    // HAL_UART_Transmit(&huart1, (uint8_t *)&Buffer, 1, 0xffff);
-    // CarrierFreq = Buffer[0];
-    // printf("CarrierFreq:%d\n", CarrierFreq);
     if (Buffer[0] == 'T') {
       printf("%f", fmModu);
     }
     HAL_UART_Receive_IT(&huart1, (uint8_t *)Buffer, 1);
   }
 }
-// ! PROGTAMME HERE
+// ! PROGRAM HERE
 
 
 #define length 20
@@ -142,7 +138,6 @@ void extract_both_amplitudes() {
     _last_AmpFMMin[i] = _last_AmpFMMin[i+1];
   }
   
-  // 计算�?????大�?�和�?????小�??
   _AmpAMMax = 0;
   _AmpAMMin = 0xFFFF;
   _AmpFMMax = 0;
@@ -172,15 +167,14 @@ void extract_both_amplitudes() {
 }
 
 
-uint16_t claculateMaxFreqOffset(float modu)
+uint16_t calculateMaxFreqOffset(float modu)
 {
   //! modu = max/mainfreq
-  maxOffset = modu * mainFreqFM;
-  return maxOffset;
+  return modu * mainFreqFM;
 }
 
-uint8_t judegeCW(){
-  if (AmpAMMax-AmpAMMin<200 && AmpFMMax-AmpFMMin<300) return 1;
+uint8_t judgeCW(){
+  if (AmpAMMax-AmpAMMin<200 && AmpFMMax-AmpFMMin<150) return 1;
   else return 0;
 }
 
@@ -193,43 +187,80 @@ void judgeAMFMCW(float am, float fm)
   uint8_t _fsk = thrid_output_F > 0.04 ? 1 : 0;
   uint8_t _ask = thrid_output_A > 0.06 ? 1 : 0;
   // printf("FSK:%.3f\t ASK:%.3f\n",thrid_output_F,thrid_output_A);
-  if(judegeCW() == 1) {
-    CW();
-    // HMC241_Set_Channel(0);
-    return;
-  } else{
+  if(judgeCW() == 1) {
+    #if PRODUCTION_MODE == 0
+      printType(JudgeType(CW_TYPE));
+    #endif
+    #if PRODUCTION_MODE
+      CW();
+      Modulation(0);
+      ModFreq(0);
+      OffsetFreq(0);
+      Kf(0);
+      Rc(0);
+    #endif
+  } else {
     // ! classified as No-CW
     if (AmpAMMax-AmpAMMin<200) {
       HMC241_Set_Channel(2);
       // ! classified as FM or FSK
       if (_fsk == 1 ) {
-        printType(JudgeType(FSK_TYPE));
+        #if PRODUCTION_MODE == 0
+          printType(JudgeType(FSK_TYPE));
+        #endif
         CD_4051_SetChannel(4);
-        FSK();
-        Rc(20*mainFreqFM);
+        #if PRODUCTION_MODE
+          FSK();
+          Modulation(0);
+          ModFreq(mainFreqFM*10);  
+          OffsetFreq(0);
+          Kf(541880);
+          Rc(20*mainFreqFM);
+        #endif
       } else {
-        printType(JudgeType(FM_TYPE));
+        #if PRODUCTION_MODE == 0
+          printType(JudgeType(FM_TYPE));
+        #endif
         CD_4051_SetChannel(3);
-        FM();
-        Modulation((int)round(calculateFMModulate(fmModu,mainFreqFM)*10));
-        ModFreq(mainFreqFM*10);
-        OffsetFreq((int)round(claculateMaxFreqOffset(calculateFMModulate(fmModu,mainFreqFM)))*10);
+        #if PRODUCTION_MODE
+          FM();
+          Modulation((int)round(calculateFMModulate(fmModu,mainFreqFM)*100));
+          ModFreq(mainFreqFM*10);
+          OffsetFreq((int)round(calculateMaxFreqOffset(calculateFMModulate(fmModu,mainFreqFM)))*10);
+          Kf(0);
+          Rc(0);
+        #endif
       }
     } else {
       HMC241_Set_Channel(3);
       if (_ask == 1) {
         // ! classified as ASK
-        printType(JudgeType(ASK_TYPE));
+        #if PRODUCTION_MODE == 0
+          printType(JudgeType(ASK_TYPE));
+        #endif
         CD_4051_SetChannel(2);
-        ASK();
-        Rc(20*mainFreqAM);
+        #if PRODUCTION_MODE
+          ASK();
+          Modulation(0);
+          ModFreq(mainFreqAM*10);
+          OffsetFreq(0);
+          Rc(20*mainFreqAM);
+          Kf(0);
+        #endif
       } else {
         // ! classified as AM
-        printType(JudgeType(AM_TYPE));
+        #if PRODUCTION_MODE == 0
+          printType(JudgeType(AM_TYPE));
+        #endif
         CD_4051_SetChannel(3);
-        AM();
-        Modulation(round(calculateAMModulate(amModu,CarrierFreq)*10));
-        ModFreq(mainFreqAM*10);
+        #if PRODUCTION_MODE
+          AM();
+          Modulation((int)round(calculateAMModulate(amModu,CarrierFreq)*100));
+          ModFreq(mainFreqAM*10);
+          OffsetFreq(0);
+          Kf(0);
+          Rc(0);
+        #endif
       }
     }
   }
@@ -242,14 +273,16 @@ void loop()
   HAL_ADC_Start_DMA(&hadc1, (uint32_t *)adc_buff1, FFT_LENGTH);
   HAL_ADC_Start_DMA(&hadc3, (uint32_t *)adc_buff3, FFT_LENGTH);
   extract_both_amplitudes();
-  printf("AM:%.2f\tFM:%.3f\t AMFreq:%d\t FMFreq:%d\r\n",
-    calculateAMModulate(amModu,CarrierFreq),
-    calculateFMModulate(fmModu,mainFreqFM),
-    mainFreqAM,
-    mainFreqFM
-  );
-  // // // judegeFSKFM();
-  
+  #if PRODUCTION_MODE == 0
+    printf("AMMax:%d\t AMMin:%d\t AMMax-AMMin:%d\t FMMax:%d\t FMMin:%d \t FMMAX-FMMIN:%d\r\n",
+      AmpAMMax,
+      AmpAMMin,
+      AmpAMMax - AmpAMMin,
+      AmpFMMax,
+      AmpFMMin,
+      AmpFMMax - AmpFMMin
+    );
+  #endif
   judgeAMFMCW(calculateAMModulate(amModu,CarrierFreq), calculateFMModulate(fmModu,mainFreqFM));
   HAL_Delay(50);
 }

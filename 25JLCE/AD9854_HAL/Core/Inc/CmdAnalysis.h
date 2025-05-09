@@ -14,7 +14,7 @@
 #define ModFreq(freq) printf("x0.val=%d",freq);End()
 #define OffsetFreq(freq) printf("x2.val=%d",freq);End()
 #define Rc(Rc) printf("x4.val=%d",Rc);End()
-#define Kf(Kf) printf("x3.val=%d",freq);End()
+#define Kf(Kf) printf("x3.val=%d",Kf);End()
 
 
 void End(){
@@ -49,100 +49,100 @@ float calculateAMModulate(float var,uint8_t CarrierFreq)
 }
 
 
-float calculateFMModulate(float var, uint16_t CarrierFreq) {
+float calculateFMModulate(float var, uint16_t ModFreq) {
   float y = 0;
   // var /= 2;
-  if (CarrierFreq >= 10000) {
+  if (ModFreq >= 10000) {
     y = -0.060619f * pow(var, 0) + 0.003588f * pow(var, 1);
-  } else if (CarrierFreq >= 9800) {
+  } else if (ModFreq >= 9800) {
     y = -0.05318f * pow(var, 0) + 0.003549f * pow(var, 1);
-  } else if (CarrierFreq >= 9600) {
+  } else if (ModFreq >= 9600) {
     y = -0.057064f * pow(var, 0) + 0.003547f * pow(var, 1);
-  } else if (CarrierFreq >= 9400) {
+  } else if (ModFreq >= 9400) {
     y = -0.052955f * pow(var, 0) + 0.003531f * pow(var, 1);
-  } else if (CarrierFreq >= 9200) {
+  } else if (ModFreq >= 9200) {
     y = -0.051596f * pow(var, 0) + 0.003512f * pow(var, 1);
-  } else if (CarrierFreq >= 9000) {
+  } else if (ModFreq >= 9000) {
     y = -0.057955f * pow(var, 0) + 0.003494f * pow(var, 1);
-  } else if (CarrierFreq >= 8800) {
+  } else if (ModFreq >= 8800) {
     y = -0.047646f * pow(var, 0) + 0.003453f * pow(var, 1);
-  } else if (CarrierFreq >= 8600) {
+  } else if (ModFreq >= 8600) {
     y = -0.054092f * pow(var, 0) + 0.003425f * pow(var, 1);
-  } else if (CarrierFreq >= 8400) {
+  } else if (ModFreq >= 8400) {
     y = -0.055659f * pow(var, 0) + 0.003397f * pow(var, 1);
-  } else if (CarrierFreq >= 8200) {
+  } else if (ModFreq >= 8200) {
     y = -0.043938f * pow(var, 0) + 0.003357f * pow(var, 1);
-  } else if (CarrierFreq >= 8000) {
+  } else if (ModFreq >= 8000) {
     y = -0.054947f * pow(var, 0) + 0.003351f * pow(var, 1);
-  } else if (CarrierFreq >= 7800) {
+  } else if (ModFreq >= 7800) {
     y = -0.051011f * pow(var, 0) + 0.003334f * pow(var, 1);
-  } else if (CarrierFreq >= 7600) {
+  } else if (ModFreq >= 7600) {
     y = -0.04654f * pow(var, 0) + 0.003324f * pow(var, 1);
-  } else if (CarrierFreq >= 7400) {
+  } else if (ModFreq >= 7400) {
     y = -0.04596f * pow(var, 0) + 0.003331f * pow(var, 1);
-  } else if (CarrierFreq >= 7200) {
+  } else if (ModFreq >= 7200) {
     y = -0.048529f * pow(var, 0) + 0.003348f * pow(var, 1);
-  } else if (CarrierFreq >= 7000) {
+  } else if (ModFreq >= 7000) {
     y = -0.044748f * pow(var, 0) + 0.003366f * pow(var, 1);
-  } else if (CarrierFreq >= 6800) {
+  } else if (ModFreq >= 6800) {
     y = -0.048484f * pow(var, 0) + 0.003391f * pow(var, 1);
-  } else if (CarrierFreq >= 6600) {
+  } else if (ModFreq >= 6600) {
     y = -0.049242f * pow(var, 0) + 0.00342f * pow(var, 1);
-  } else if (CarrierFreq >= 6400) {
+  } else if (ModFreq >= 6400) {
     y = -0.053528f * pow(var, 0) + 0.003454f * pow(var, 1);
-  } else if (CarrierFreq >= 6200) {
+  } else if (ModFreq >= 6200) {
     y = -0.052446f * pow(var, 0) + 0.003473f * pow(var, 1);
-  } else if (CarrierFreq >= 6000) {
+  } else if (ModFreq >= 6000) {
     y = -0.054541f * pow(var, 0) + 0.003496f * pow(var, 1);
-  } else if (CarrierFreq >= 5800) {
+  } else if (ModFreq >= 5800) {
     y = -0.054313f * pow(var, 0) + 0.003505f * pow(var, 1);
-  } else if (CarrierFreq >= 5600) {
+  } else if (ModFreq >= 5600) {
     y = -0.055095f * pow(var, 0) + 0.00351f * pow(var, 1);
-  } else if (CarrierFreq >= 5400) {
+  } else if (ModFreq >= 5400) {
     y = -0.05614f * pow(var, 0) + 0.003509f * pow(var, 1);
-  } else if (CarrierFreq >= 5200) {
+  } else if (ModFreq >= 5200) {
     y = -0.057037f * pow(var, 0) + 0.0035f * pow(var, 1);
-  } else if (CarrierFreq >= 5000) {
+  } else if (ModFreq >= 5000) {
     y = -0.052393f * pow(var, 0) + 0.003494f * pow(var, 1);
-  } else if (CarrierFreq >= 4800) {
+  } else if (ModFreq >= 4800) {
     y = -0.052901f * pow(var, 0) + 0.003482f * pow(var, 1);
-  } else if (CarrierFreq >= 4600) {
+  } else if (ModFreq >= 4600) {
     y = -0.057706f * pow(var, 0) + 0.003477f * pow(var, 1);
-  } else if (CarrierFreq >= 4400) {
+  } else if (ModFreq >= 4400) {
     y = -0.052512f * pow(var, 0) + 0.003478f * pow(var, 1);
-  } else if (CarrierFreq >= 4200) {
+  } else if (ModFreq >= 4200) {
     y = -0.060042f * pow(var, 0) + 0.003492f * pow(var, 1);
-  } else if (CarrierFreq >= 4000) {
+  } else if (ModFreq >= 4000) {
     y = -0.054769f * pow(var, 0) + 0.003511f * pow(var, 1);
-  } else if (CarrierFreq >= 3800) {
+  } else if (ModFreq >= 3800) {
     y = -0.056044f * pow(var, 0) + 0.003549f * pow(var, 1);
-  } else if (CarrierFreq >= 3600) {
+  } else if (ModFreq >= 3600) {
     y = -0.066021f * pow(var, 0) + 0.003609f * pow(var, 1);
-  } else if (CarrierFreq >= 3400) {
+  } else if (ModFreq >= 3400) {
     y = -0.066261f * pow(var, 0) + 0.003682f * pow(var, 1);
-  } else if (CarrierFreq >= 3200) {
+  } else if (ModFreq >= 3200) {
     y = -0.065898f * pow(var, 0) + 0.003766f * pow(var, 1);
-  } else if (CarrierFreq >= 3000) {
+  } else if (ModFreq >= 3000) {
     y = -0.069989f * pow(var, 0) + 0.003868f * pow(var, 1);
-  } else if (CarrierFreq >= 2800) {
+  } else if (ModFreq >= 2800) {
     y = -0.068966f * pow(var, 0) + 0.003989f * pow(var, 1);
-  } else if (CarrierFreq >= 2600) {
+  } else if (ModFreq >= 2600) {
     y = -0.067963f * pow(var, 0) + 0.00412f * pow(var, 1);
-  } else if (CarrierFreq >= 2400) {
+  } else if (ModFreq >= 2400) {
     y = -0.079395f * pow(var, 0) + 0.004294f * pow(var, 1);
-  } else if (CarrierFreq >= 2200) {
+  } else if (ModFreq >= 2200) {
     y = -0.080467f * pow(var, 0) + 0.004476f * pow(var, 1);
-  } else if (CarrierFreq >= 2000) {
+  } else if (ModFreq >= 2000) {
     y = -0.084848f * pow(var, 0) + 0.004692f * pow(var, 1);
-  } else if (CarrierFreq >= 1800) {
+  } else if (ModFreq >= 1800) {
     y = -0.09497f * pow(var, 0) + 0.004955f * pow(var, 1);
-  } else if (CarrierFreq >= 1600) {
+  } else if (ModFreq >= 1600) {
     y = -0.111861f * pow(var, 0) + 0.005301f * pow(var, 1);
-  } else if (CarrierFreq >= 1400) {
+  } else if (ModFreq >= 1400) {
     y = -0.120252f * pow(var, 0) + 0.005719f * pow(var, 1);
-  } else if (CarrierFreq >= 1200) {
+  } else if (ModFreq >= 1200) {
     y = -0.127421f * pow(var, 0) + 0.006293f * pow(var, 1);
-  } else if (CarrierFreq >= 1000) {
+  } else if (ModFreq >= 1000) {
     y = -0.091212f * pow(var, 0) + 0.00711f * pow(var, 1);
   } else {
     y = -0.091212f * pow(var, 0) + 0.00711f * pow(var, 1);
@@ -150,29 +150,39 @@ float calculateFMModulate(float var, uint16_t CarrierFreq) {
   return y;
 }
 
+float calculateFSKCoefficient(float var,uint16_t CarrierFreq){
+  float y = 0;
+
+  return y;
+}
+
+#define CW_TYPE 0
 #define AM_TYPE 1
 #define ASK_TYPE 2
 #define FM_TYPE 3
 #define FSK_TYPE 4
 
 void printType(uint8_t type){
-    // switch (type)
-    // {
-    // case AM_TYPE:
-    //   printf("AM\n");
-    //   break;
-    // case ASK_TYPE:
-    //   printf("ASK\n");
-    //   break;
-    // case FM_TYPE:
-    //   printf("FM\n");
-    //   break;
-    // case FSK_TYPE:
-    //   printf("FSK\n");
-    //   break;
-    // default:
-    //   break;
-    // }
+    switch (type)
+    {
+    case CW_TYPE:
+      printf("CW\n");
+      break;
+    case AM_TYPE:
+      printf("AM\n");
+      break;
+    case ASK_TYPE:
+      printf("ASK\n");
+      break;
+    case FM_TYPE:
+      printf("FM\n");
+      break;
+    case FSK_TYPE:
+      printf("FSK\n");
+      break;
+    default:
+      break;
+    }
   }
 
 
