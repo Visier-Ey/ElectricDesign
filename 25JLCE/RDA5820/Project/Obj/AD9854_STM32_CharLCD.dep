@@ -1,0 +1,222 @@
+Dependencies for Project 'AD9854', Target 'STM32_CharLCD': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARM_Compiler_5.06u7
+F (..\User\main.c)(0x68189FA2)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\CMSIS -I ..\CMSIS\CoreSupport -I ..\CMSIS\DeviceSupport\STM32F10x -I ..\STM32F10x_StdPeriph_Driver\inc -I ..\User\Delay -I ..\User\CharLCD -I ..\User\PeripheralInit -I ..\SYSTEM -I ..\BSP\RDA5820 -I ..\BSP\DMA -I ..\BSP\ADC -I ..\SYSTME\sys -I ..\ -I ..\BSP\LED-ID:\keilpackage\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="541" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\obj\main.o --omf_browse .\obj\main.crf --depend .\obj\main.d)
+I (..\CMSIS\DeviceSupport\STM32F10x\stm32f10x.h)(0x680901E0)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x680901E0)
+I (D:\keil\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (..\CMSIS\DeviceSupport\STM32F10x\system_stm32f10x.h)(0x680901E0)
+I (..\CMSIS\DeviceSupport\STM32F10x\stm32f10x_conf.h)(0x680901E0)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x680901E1)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x680901E1)
+I (..\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x680901E1)
+I (..\User\Delay.h)(0x680901E1)
+I (..\User\AD9854.h)(0x680901E1)
+I (..\./SYSTEM/sys/sys.h)(0x680901E1)
+I (..\./SYSTEM/usart/usart.h)(0x680901E1)
+I (D:\keil\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E3CC2)
+I (..\./SYSTEM/delay/delay.h)(0x680901E1)
+I (..\./BSP/RDA5820/rda5820.h)(0x68186C98)
+I (..\./BSP/RDA5820/myiic.h)(0x680901E0)
+I (..\./BSP/RDA5820/rda5820_2.h)(0x68187224)
+I (..\./BSP/RDA5820/myiic_2.h)(0x681876B8)
+I (..\./BSP/DMA/dma.h)(0x680901E0)
+I (..\./BSP/ADC/adc.h)(0x680901E0)
+I (..\./BSP/LED/led.h)(0x680901E0)
+I (..\User\launchStation.h)(0x680901E1)
+I (..\User\AnalysisCmd.h)(0x680901E1)
+F (..\User\CharLCD.c)(0x680901E1)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\CMSIS -I ..\CMSIS\CoreSupport -I ..\CMSIS\DeviceSupport\STM32F10x -I ..\STM32F10x_StdPeriph_Driver\inc -I ..\User\Delay -I ..\User\CharLCD -I ..\User\PeripheralInit -I ..\SYSTEM -I ..\BSP\RDA5820 -I ..\BSP\DMA -I ..\BSP\ADC -I ..\SYSTME\sys -I ..\ -I ..\BSP\LED-ID:\keilpackage\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="541" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\obj\charlcd.o --omf_browse .\obj\charlcd.crf --depend .\obj\charlcd.d)
+I (..\CMSIS\DeviceSupport\STM32F10x\stm32f10x.h)(0x680901E0)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x680901E0)
+I (D:\keil\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (..\CMSIS\DeviceSupport\STM32F10x\system_stm32f10x.h)(0x680901E0)
+I (..\CMSIS\DeviceSupport\STM32F10x\stm32f10x_conf.h)(0x680901E0)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x680901E1)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x680901E1)
+I (..\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x680901E1)
+I (..\User\Delay.h)(0x680901E1)
+I (..\User\CharLCD.h)(0x680901E1)
+F (..\User\Delay.c)(0x680901E1)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\CMSIS -I ..\CMSIS\CoreSupport -I ..\CMSIS\DeviceSupport\STM32F10x -I ..\STM32F10x_StdPeriph_Driver\inc -I ..\User\Delay -I ..\User\CharLCD -I ..\User\PeripheralInit -I ..\SYSTEM -I ..\BSP\RDA5820 -I ..\BSP\DMA -I ..\BSP\ADC -I ..\SYSTME\sys -I ..\ -I ..\BSP\LED-ID:\keilpackage\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="541" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\obj\delay.o --omf_browse .\obj\delay.crf --depend .\obj\delay.d)
+I (..\CMSIS\DeviceSupport\STM32F10x\stm32f10x.h)(0x680901E0)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x680901E0)
+I (D:\keil\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (..\CMSIS\DeviceSupport\STM32F10x\system_stm32f10x.h)(0x680901E0)
+I (..\CMSIS\DeviceSupport\STM32F10x\stm32f10x_conf.h)(0x680901E0)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x680901E1)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x680901E1)
+I (..\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x680901E1)
+I (..\User\Delay.h)(0x680901E1)
+F (..\User\AD9854.c)(0x680901E1)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\CMSIS -I ..\CMSIS\CoreSupport -I ..\CMSIS\DeviceSupport\STM32F10x -I ..\STM32F10x_StdPeriph_Driver\inc -I ..\User\Delay -I ..\User\CharLCD -I ..\User\PeripheralInit -I ..\SYSTEM -I ..\BSP\RDA5820 -I ..\BSP\DMA -I ..\BSP\ADC -I ..\SYSTME\sys -I ..\ -I ..\BSP\LED-ID:\keilpackage\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="541" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\obj\ad9854.o --omf_browse .\obj\ad9854.crf --depend .\obj\ad9854.d)
+I (..\CMSIS\DeviceSupport\STM32F10x\stm32f10x.h)(0x680901E0)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x680901E0)
+I (D:\keil\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (..\CMSIS\DeviceSupport\STM32F10x\system_stm32f10x.h)(0x680901E0)
+I (..\CMSIS\DeviceSupport\STM32F10x\stm32f10x_conf.h)(0x680901E0)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x680901E1)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x680901E1)
+I (..\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x680901E1)
+I (..\User\AD9854.h)(0x680901E1)
+I (..\User\Delay.h)(0x680901E1)
+F (..\BSP\ADC\adc.c)(0x680901E0)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\CMSIS -I ..\CMSIS\CoreSupport -I ..\CMSIS\DeviceSupport\STM32F10x -I ..\STM32F10x_StdPeriph_Driver\inc -I ..\User\Delay -I ..\User\CharLCD -I ..\User\PeripheralInit -I ..\SYSTEM -I ..\BSP\RDA5820 -I ..\BSP\DMA -I ..\BSP\ADC -I ..\SYSTME\sys -I ..\ -I ..\BSP\LED-ID:\keilpackage\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="541" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\obj\adc.o --omf_browse .\obj\adc.crf --depend .\obj\adc.d)
+I (..\./BSP/ADC/adc.h)(0x680901E0)
+I (..\./SYSTEM/sys/sys.h)(0x680901E1)
+I (..\CMSIS\DeviceSupport\STM32F10x\stm32f10x.h)(0x680901E0)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x680901E0)
+I (D:\keil\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (..\CMSIS\DeviceSupport\STM32F10x\system_stm32f10x.h)(0x680901E0)
+I (..\CMSIS\DeviceSupport\STM32F10x\stm32f10x_conf.h)(0x680901E0)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x680901E1)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x680901E1)
+I (..\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x680901E1)
+I (..\./BSP/DMA/dma.h)(0x680901E0)
+I (..\./SYSTEM/delay/delay.h)(0x680901E1)
+F (..\BSP\DMA\dma.c)(0x680901E0)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\CMSIS -I ..\CMSIS\CoreSupport -I ..\CMSIS\DeviceSupport\STM32F10x -I ..\STM32F10x_StdPeriph_Driver\inc -I ..\User\Delay -I ..\User\CharLCD -I ..\User\PeripheralInit -I ..\SYSTEM -I ..\BSP\RDA5820 -I ..\BSP\DMA -I ..\BSP\ADC -I ..\SYSTME\sys -I ..\ -I ..\BSP\LED-ID:\keilpackage\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="541" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\obj\dma.o --omf_browse .\obj\dma.crf --depend .\obj\dma.d)
+I (..\./BSP/DMA/dma.h)(0x680901E0)
+I (..\./SYSTEM/sys/sys.h)(0x680901E1)
+I (..\CMSIS\DeviceSupport\STM32F10x\stm32f10x.h)(0x680901E0)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x680901E0)
+I (D:\keil\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (..\CMSIS\DeviceSupport\STM32F10x\system_stm32f10x.h)(0x680901E0)
+I (..\CMSIS\DeviceSupport\STM32F10x\stm32f10x_conf.h)(0x680901E0)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x680901E1)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x680901E1)
+I (..\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x680901E1)
+I (..\./SYSTEM/delay/delay.h)(0x680901E1)
+F (..\BSP\RDA5820\myiic.c)(0x680901E0)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\CMSIS -I ..\CMSIS\CoreSupport -I ..\CMSIS\DeviceSupport\STM32F10x -I ..\STM32F10x_StdPeriph_Driver\inc -I ..\User\Delay -I ..\User\CharLCD -I ..\User\PeripheralInit -I ..\SYSTEM -I ..\BSP\RDA5820 -I ..\BSP\DMA -I ..\BSP\ADC -I ..\SYSTME\sys -I ..\ -I ..\BSP\LED-ID:\keilpackage\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="541" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\obj\myiic.o --omf_browse .\obj\myiic.crf --depend .\obj\myiic.d)
+I (..\BSP\RDA5820\myiic.h)(0x680901E0)
+I (..\./SYSTEM/sys/sys.h)(0x680901E1)
+I (..\CMSIS\DeviceSupport\STM32F10x\stm32f10x.h)(0x680901E0)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x680901E0)
+I (D:\keil\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (..\CMSIS\DeviceSupport\STM32F10x\system_stm32f10x.h)(0x680901E0)
+I (..\CMSIS\DeviceSupport\STM32F10x\stm32f10x_conf.h)(0x680901E0)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x680901E1)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x680901E1)
+I (..\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x680901E1)
+I (..\./SYSTEM/delay/delay.h)(0x680901E1)
+F (..\BSP\RDA5820\rda5820.c)(0x68187D75)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\CMSIS -I ..\CMSIS\CoreSupport -I ..\CMSIS\DeviceSupport\STM32F10x -I ..\STM32F10x_StdPeriph_Driver\inc -I ..\User\Delay -I ..\User\CharLCD -I ..\User\PeripheralInit -I ..\SYSTEM -I ..\BSP\RDA5820 -I ..\BSP\DMA -I ..\BSP\ADC -I ..\SYSTME\sys -I ..\ -I ..\BSP\LED-ID:\keilpackage\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="541" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\obj\rda5820.o --omf_browse .\obj\rda5820.crf --depend .\obj\rda5820.d)
+I (..\BSP\RDA5820\rda5820.h)(0x68186C98)
+I (..\./SYSTEM/sys/sys.h)(0x680901E1)
+I (..\CMSIS\DeviceSupport\STM32F10x\stm32f10x.h)(0x680901E0)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x680901E0)
+I (D:\keil\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (..\CMSIS\DeviceSupport\STM32F10x\system_stm32f10x.h)(0x680901E0)
+I (..\CMSIS\DeviceSupport\STM32F10x\stm32f10x_conf.h)(0x680901E0)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x680901E1)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x680901E1)
+I (..\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x680901E1)
+I (..\BSP\RDA5820\myiic.h)(0x680901E0)
+I (..\./SYSTEM/delay/delay.h)(0x680901E1)
+I (..\./SYSTEM/usart/usart.h)(0x680901E1)
+I (D:\keil\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E3CC2)
+F (..\BSP\LED\led.c)(0x680901E0)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\CMSIS -I ..\CMSIS\CoreSupport -I ..\CMSIS\DeviceSupport\STM32F10x -I ..\STM32F10x_StdPeriph_Driver\inc -I ..\User\Delay -I ..\User\CharLCD -I ..\User\PeripheralInit -I ..\SYSTEM -I ..\BSP\RDA5820 -I ..\BSP\DMA -I ..\BSP\ADC -I ..\SYSTME\sys -I ..\ -I ..\BSP\LED-ID:\keilpackage\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="541" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\obj\led.o --omf_browse .\obj\led.crf --depend .\obj\led.d)
+I (..\./BSP/LED/led.h)(0x680901E0)
+I (..\./SYSTEM/sys/sys.h)(0x680901E1)
+I (..\CMSIS\DeviceSupport\STM32F10x\stm32f10x.h)(0x680901E0)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x680901E0)
+I (D:\keil\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (..\CMSIS\DeviceSupport\STM32F10x\system_stm32f10x.h)(0x680901E0)
+I (..\CMSIS\DeviceSupport\STM32F10x\stm32f10x_conf.h)(0x680901E0)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x680901E1)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x680901E1)
+I (..\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x680901E1)
+F (..\BSP\RDA5820\myiic_2.c)(0x681876C3)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\CMSIS -I ..\CMSIS\CoreSupport -I ..\CMSIS\DeviceSupport\STM32F10x -I ..\STM32F10x_StdPeriph_Driver\inc -I ..\User\Delay -I ..\User\CharLCD -I ..\User\PeripheralInit -I ..\SYSTEM -I ..\BSP\RDA5820 -I ..\BSP\DMA -I ..\BSP\ADC -I ..\SYSTME\sys -I ..\ -I ..\BSP\LED-ID:\keilpackage\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="541" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\obj\myiic_2.o --omf_browse .\obj\myiic_2.crf --depend .\obj\myiic_2.d)
+I (..\BSP\RDA5820\myiic_2.h)(0x681876B8)
+I (..\./SYSTEM/sys/sys.h)(0x680901E1)
+I (..\CMSIS\DeviceSupport\STM32F10x\stm32f10x.h)(0x680901E0)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x680901E0)
+I (D:\keil\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (..\CMSIS\DeviceSupport\STM32F10x\system_stm32f10x.h)(0x680901E0)
+I (..\CMSIS\DeviceSupport\STM32F10x\stm32f10x_conf.h)(0x680901E0)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x680901E1)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x680901E1)
+I (..\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x680901E1)
+I (..\./SYSTEM/delay/delay.h)(0x680901E1)
+F (..\BSP\RDA5820\rda5820_2.c)(0x6818753F)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\CMSIS -I ..\CMSIS\CoreSupport -I ..\CMSIS\DeviceSupport\STM32F10x -I ..\STM32F10x_StdPeriph_Driver\inc -I ..\User\Delay -I ..\User\CharLCD -I ..\User\PeripheralInit -I ..\SYSTEM -I ..\BSP\RDA5820 -I ..\BSP\DMA -I ..\BSP\ADC -I ..\SYSTME\sys -I ..\ -I ..\BSP\LED-ID:\keilpackage\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="541" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\obj\rda5820_2.o --omf_browse .\obj\rda5820_2.crf --depend .\obj\rda5820_2.d)
+I (..\BSP\RDA5820\rda5820_2.h)(0x68187224)
+I (..\./SYSTEM/sys/sys.h)(0x680901E1)
+I (..\CMSIS\DeviceSupport\STM32F10x\stm32f10x.h)(0x680901E0)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x680901E0)
+I (D:\keil\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (..\CMSIS\DeviceSupport\STM32F10x\system_stm32f10x.h)(0x680901E0)
+I (..\CMSIS\DeviceSupport\STM32F10x\stm32f10x_conf.h)(0x680901E0)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x680901E1)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x680901E1)
+I (..\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x680901E1)
+I (..\BSP\RDA5820\myiic_2.h)(0x681876B8)
+I (..\BSP\RDA5820\rda5820.h)(0x68186C98)
+I (..\BSP\RDA5820\myiic.h)(0x680901E0)
+I (..\./SYSTEM/delay/delay.h)(0x680901E1)
+I (..\./SYSTEM/usart/usart.h)(0x680901E1)
+I (D:\keil\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E3CC2)
+F (..\STM32F10x_StdPeriph_Driver\src\misc.c)(0x680901E1)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\CMSIS -I ..\CMSIS\CoreSupport -I ..\CMSIS\DeviceSupport\STM32F10x -I ..\STM32F10x_StdPeriph_Driver\inc -I ..\User\Delay -I ..\User\CharLCD -I ..\User\PeripheralInit -I ..\SYSTEM -I ..\BSP\RDA5820 -I ..\BSP\DMA -I ..\BSP\ADC -I ..\SYSTME\sys -I ..\ -I ..\BSP\LED-ID:\keilpackage\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="541" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\obj\misc.o --omf_browse .\obj\misc.crf --depend .\obj\misc.d)
+I (..\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x680901E1)
+I (..\CMSIS\DeviceSupport\STM32F10x\stm32f10x.h)(0x680901E0)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x680901E0)
+I (D:\keil\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (..\CMSIS\DeviceSupport\STM32F10x\system_stm32f10x.h)(0x680901E0)
+I (..\CMSIS\DeviceSupport\STM32F10x\stm32f10x_conf.h)(0x680901E0)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x680901E1)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x680901E1)
+F (..\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c)(0x680901E1)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\CMSIS -I ..\CMSIS\CoreSupport -I ..\CMSIS\DeviceSupport\STM32F10x -I ..\STM32F10x_StdPeriph_Driver\inc -I ..\User\Delay -I ..\User\CharLCD -I ..\User\PeripheralInit -I ..\SYSTEM -I ..\BSP\RDA5820 -I ..\BSP\DMA -I ..\BSP\ADC -I ..\SYSTME\sys -I ..\ -I ..\BSP\LED-ID:\keilpackage\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="541" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\obj\stm32f10x_gpio.o --omf_browse .\obj\stm32f10x_gpio.crf --depend .\obj\stm32f10x_gpio.d)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x680901E1)
+I (..\CMSIS\DeviceSupport\STM32F10x\stm32f10x.h)(0x680901E0)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x680901E0)
+I (D:\keil\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (..\CMSIS\DeviceSupport\STM32F10x\system_stm32f10x.h)(0x680901E0)
+I (..\CMSIS\DeviceSupport\STM32F10x\stm32f10x_conf.h)(0x680901E0)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x680901E1)
+I (..\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x680901E1)
+F (..\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c)(0x680901E1)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\CMSIS -I ..\CMSIS\CoreSupport -I ..\CMSIS\DeviceSupport\STM32F10x -I ..\STM32F10x_StdPeriph_Driver\inc -I ..\User\Delay -I ..\User\CharLCD -I ..\User\PeripheralInit -I ..\SYSTEM -I ..\BSP\RDA5820 -I ..\BSP\DMA -I ..\BSP\ADC -I ..\SYSTME\sys -I ..\ -I ..\BSP\LED-ID:\keilpackage\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="541" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\obj\stm32f10x_rcc.o --omf_browse .\obj\stm32f10x_rcc.crf --depend .\obj\stm32f10x_rcc.d)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x680901E1)
+I (..\CMSIS\DeviceSupport\STM32F10x\stm32f10x.h)(0x680901E0)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x680901E0)
+I (D:\keil\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (..\CMSIS\DeviceSupport\STM32F10x\system_stm32f10x.h)(0x680901E0)
+I (..\CMSIS\DeviceSupport\STM32F10x\stm32f10x_conf.h)(0x680901E0)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x680901E1)
+I (..\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x680901E1)
+F (..\CMSIS\CoreSupport\core_cm3.c)(0x680901E0)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\CMSIS -I ..\CMSIS\CoreSupport -I ..\CMSIS\DeviceSupport\STM32F10x -I ..\STM32F10x_StdPeriph_Driver\inc -I ..\User\Delay -I ..\User\CharLCD -I ..\User\PeripheralInit -I ..\SYSTEM -I ..\BSP\RDA5820 -I ..\BSP\DMA -I ..\BSP\ADC -I ..\SYSTME\sys -I ..\ -I ..\BSP\LED-ID:\keilpackage\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="541" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\obj\core_cm3.o --omf_browse .\obj\core_cm3.crf --depend .\obj\core_cm3.d)
+I (D:\keil\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+F (..\CMSIS\DeviceSupport\STM32F10x\system_stm32f10x.c)(0x680901E0)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\CMSIS -I ..\CMSIS\CoreSupport -I ..\CMSIS\DeviceSupport\STM32F10x -I ..\STM32F10x_StdPeriph_Driver\inc -I ..\User\Delay -I ..\User\CharLCD -I ..\User\PeripheralInit -I ..\SYSTEM -I ..\BSP\RDA5820 -I ..\BSP\DMA -I ..\BSP\ADC -I ..\SYSTME\sys -I ..\ -I ..\BSP\LED-ID:\keilpackage\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="541" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\obj\system_stm32f10x.o --omf_browse .\obj\system_stm32f10x.crf --depend .\obj\system_stm32f10x.d)
+I (..\CMSIS\DeviceSupport\STM32F10x\stm32f10x.h)(0x680901E0)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x680901E0)
+I (D:\keil\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (..\CMSIS\DeviceSupport\STM32F10x\system_stm32f10x.h)(0x680901E0)
+I (..\CMSIS\DeviceSupport\STM32F10x\stm32f10x_conf.h)(0x680901E0)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x680901E1)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x680901E1)
+I (..\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x680901E1)
+F (..\CMSIS\DeviceSupport\STM32F10x\startup_stm32f10x_hd.s)(0x680901E0)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-ID:\keilpackage\Keil\STM32F1xx_DFP\2.4.1\Device\Include--pd "__UVISION_VERSION SETA 541" --pd "STM32F10X_HD SETA 1"--list .\list\startup_stm32f10x_hd.lst --xref -o .\obj\startup_stm32f10x_hd.o --depend .\obj\startup_stm32f10x_hd.d)
+F (..\SYSTEM\usart\usart.c)(0x680901E1)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\CMSIS -I ..\CMSIS\CoreSupport -I ..\CMSIS\DeviceSupport\STM32F10x -I ..\STM32F10x_StdPeriph_Driver\inc -I ..\User\Delay -I ..\User\CharLCD -I ..\User\PeripheralInit -I ..\SYSTEM -I ..\BSP\RDA5820 -I ..\BSP\DMA -I ..\BSP\ADC -I ..\SYSTME\sys -I ..\ -I ..\BSP\LED-ID:\keilpackage\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="541" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\obj\usart.o --omf_browse .\obj\usart.crf --depend .\obj\usart.d)
+I (..\./SYSTEM/sys/sys.h)(0x680901E1)
+I (..\CMSIS\DeviceSupport\STM32F10x\stm32f10x.h)(0x680901E0)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x680901E0)
+I (D:\keil\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (..\CMSIS\DeviceSupport\STM32F10x\system_stm32f10x.h)(0x680901E0)
+I (..\CMSIS\DeviceSupport\STM32F10x\stm32f10x_conf.h)(0x680901E0)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x680901E1)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x680901E1)
+I (..\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x680901E1)
+I (..\./SYSTEM/usart/usart.h)(0x680901E1)
+I (D:\keil\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E3CC2)
+F (..\SYSTEM\sys\sys.c)(0x680901E1)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\CMSIS -I ..\CMSIS\CoreSupport -I ..\CMSIS\DeviceSupport\STM32F10x -I ..\STM32F10x_StdPeriph_Driver\inc -I ..\User\Delay -I ..\User\CharLCD -I ..\User\PeripheralInit -I ..\SYSTEM -I ..\BSP\RDA5820 -I ..\BSP\DMA -I ..\BSP\ADC -I ..\SYSTME\sys -I ..\ -I ..\BSP\LED-ID:\keilpackage\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="541" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\obj\sys.o --omf_browse .\obj\sys.crf --depend .\obj\sys.d)
+I (..\./SYSTEM/sys/sys.h)(0x680901E1)
+I (..\CMSIS\DeviceSupport\STM32F10x\stm32f10x.h)(0x680901E0)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x680901E0)
+I (D:\keil\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (..\CMSIS\DeviceSupport\STM32F10x\system_stm32f10x.h)(0x680901E0)
+I (..\CMSIS\DeviceSupport\STM32F10x\stm32f10x_conf.h)(0x680901E0)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x680901E1)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x680901E1)
+I (..\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x680901E1)
+F (..\SYSTEM\delay\delay.c)(0x680901E1)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\CMSIS -I ..\CMSIS\CoreSupport -I ..\CMSIS\DeviceSupport\STM32F10x -I ..\STM32F10x_StdPeriph_Driver\inc -I ..\User\Delay -I ..\User\CharLCD -I ..\User\PeripheralInit -I ..\SYSTEM -I ..\BSP\RDA5820 -I ..\BSP\DMA -I ..\BSP\ADC -I ..\SYSTME\sys -I ..\ -I ..\BSP\LED-ID:\keilpackage\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="541" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\obj\delay_1.o --omf_browse .\obj\delay_1.crf --depend .\obj\delay_1.d)
+I (..\./SYSTEM/sys/sys.h)(0x680901E1)
+I (..\CMSIS\DeviceSupport\STM32F10x\stm32f10x.h)(0x680901E0)
+I (..\CMSIS\CoreSupport\core_cm3.h)(0x680901E0)
+I (D:\keil\ARM\ARM_Compiler_5.06u7\include\stdint.h)(0x5E8E3CC2)
+I (..\CMSIS\DeviceSupport\STM32F10x\system_stm32f10x.h)(0x680901E0)
+I (..\CMSIS\DeviceSupport\STM32F10x\stm32f10x_conf.h)(0x680901E0)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h)(0x680901E1)
+I (..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h)(0x680901E1)
+I (..\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x680901E1)
+I (..\./SYSTEM/delay/delay.h)(0x680901E1)

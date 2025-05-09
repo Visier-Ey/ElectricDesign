@@ -1,0 +1,76 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.41.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1, 1, LIC=X96CK-Z5DMA-KPSZY-ILV5P-1HVET-0B83B
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.41.0.0
+Toolchain Path:  D:\keil\ARM\ARM_Compiler_5.06u7\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.41.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.3.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\Users\Euryt\Desktop\25JLCE\AD9854_HAL\MDK-ARM\AD9854_HAL.uvprojx
+Project File Date:  05/06/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\keil\ARM\ARM_Compiler_5.06u7\Bin'
+Build target 'AD9854_HAL'
+compiling main.c...
+../Core/Inc/HMC241.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif 
+../Core/Inc/CD4051.h(14): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CD4051_H__ */
+../Core/Inc/FFT.h(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Inc/CmdAnalysis.h(213): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/main.c(75): warning:  #69-D: integer conversion resulted in truncation
+  uint16_t AmpAMMin = 99999;
+../Core/Src/main.c(76): warning:  #69-D: integer conversion resulted in truncation
+  uint16_t AmpFMMin = 99999;
+../Core/Src/main.c(231): warning:  #181-D: argument is incompatible with corresponding format string conversion
+          Modulation(round(calculateAMModulate(amModu,CarrierFreq)*10));
+../Core/Src/main.c: 7 warnings, 0 errors
+linking...
+Program Size: Code=27664 RO-data=35344 RW-data=72 ZI-data=25176  
+FromELF: creating hex file...
+"AD9854_HAL\AD9854_HAL.axf" - 0 Error(s), 7 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.1.0.pack
+                ARM::CMSIS@6.1.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil::STM32F1xx_DFP@2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_AD9854_HAL
+  D:/keilpackage/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+  D:/keilpackage/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

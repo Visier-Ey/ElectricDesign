@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "ad9854.h": "c",
+        "stdint.h": "c",
+        "fft.h": "c",
+        "stdlib.h": "c",
+        "main.h": "c",
+        "errno.h": "c",
+        "stddef.h": "c",
+        "cmath": "c",
+        "cd4051.h": "c"
+    }
+}

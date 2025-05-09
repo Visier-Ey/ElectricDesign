@@ -1,0 +1,13 @@
+.\obj\myiic_2.o: ..\BSP\RDA5820\myiic_2.c
+.\obj\myiic_2.o: ..\BSP\RDA5820\myiic_2.h
+.\obj\myiic_2.o: ..\./SYSTEM/sys/sys.h
+.\obj\myiic_2.o: ..\CMSIS\DeviceSupport\STM32F10x\stm32f10x.h
+.\obj\myiic_2.o: ..\CMSIS\CoreSupport\core_cm3.h
+.\obj\myiic_2.o: D:\keil\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
+.\obj\myiic_2.o: ..\CMSIS\DeviceSupport\STM32F10x\system_stm32f10x.h
+.\obj\myiic_2.o: ..\CMSIS\DeviceSupport\STM32F10x\stm32f10x_conf.h
+.\obj\myiic_2.o: ..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h
+.\obj\myiic_2.o: ..\CMSIS\DeviceSupport\STM32F10x\stm32f10x.h
+.\obj\myiic_2.o: ..\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h
+.\obj\myiic_2.o: ..\STM32F10x_StdPeriph_Driver\inc\misc.h
+.\obj\myiic_2.o: ..\./SYSTEM/delay/delay.h
