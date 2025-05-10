@@ -1,0 +1,3 @@
+"D:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\SigGen.dir/objects.a
+D:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\SigGen.dir/objects.a @CMakeFiles\SigGen.dir\objects1.rsp
+D:\msys64\ucrt64\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\SigGen.dir/objects.a -Wl,--no-whole-archive -o SigGen.exe -Wl,--out-implib,libSigGen.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\SigGen.dir\linkLibs.rsp

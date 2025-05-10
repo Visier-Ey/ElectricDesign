@@ -27,7 +27,7 @@ def generate_c_expression(coeffs):
 
 def generate_am_modulate_function(data):
     c_code = []
-    c_code.append("float calculateFMModulate(float var, uint16_t CarrierFreq) {")
+    c_code.append("float calculateAMModulate(float var, uint16_t CarrierFreq) {")
     c_code.append("  float y = 0;")
     
     # Filter out null frequencies and convert to integers
@@ -63,7 +63,7 @@ def generate_am_modulate_function(data):
 
 try:
     # 从polynomial_fit_coefficients_degree_3.json文件读取数据
-    power = 1
+    power = 6
     with open(f'polynomial_fit_coefficients_degree_{power}.json', 'r') as file:
         data = json.load(file)
     

@@ -1,0 +1,20 @@
+[
+{
+  "directory": "D:/Users/Euryt/Desktop/SigGen/build",
+  "command": "D:\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/SigGen.dir/includes_C.rsp -g -o CMakeFiles\\SigGen.dir\\main.c.obj -c D:\\Users\\Euryt\\Desktop\\SigGen\\main.c",
+  "file": "D:/Users/Euryt/Desktop/SigGen/main.c",
+  "output": "CMakeFiles/SigGen.dir/main.c.obj"
+},
+{
+  "directory": "D:/Users/Euryt/Desktop/SigGen/build",
+  "command": "D:\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/SigGen.dir/includes_C.rsp -g -o CMakeFiles\\SigGen.dir\\serial.c.obj -c D:\\Users\\Euryt\\Desktop\\SigGen\\serial.c",
+  "file": "D:/Users/Euryt/Desktop/SigGen/serial.c",
+  "output": "CMakeFiles/SigGen.dir/serial.c.obj"
+},
+{
+  "directory": "D:/Users/Euryt/Desktop/SigGen/build",
+  "command": "D:\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/SigGen.dir/includes_C.rsp -g -o CMakeFiles\\SigGen.dir\\DG4202.c.obj -c D:\\Users\\Euryt\\Desktop\\SigGen\\DG4202.c",
+  "file": "D:/Users/Euryt/Desktop/SigGen/DG4202.c",
+  "output": "CMakeFiles/SigGen.dir/DG4202.c.obj"
+}
+]

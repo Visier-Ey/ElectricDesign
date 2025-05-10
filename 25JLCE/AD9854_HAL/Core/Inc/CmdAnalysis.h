@@ -24,30 +24,44 @@ void End(){
     // putchar(0x0a);
 }
 
-float calculateAMModulate(float var,uint8_t CarrierFreq)
-{
+float calculateAMModulate(float var, uint8_t CarrierFreq) {
   float y = 0;
-  if (CarrierFreq > 19){
-    y = -1994.6* pow(var, 6)  + 2620.7* pow(var, 5)  - 1212.5* pow(var, 4)  + 240.43* pow(var, 3)  - 18.026* pow(var, 2)  + 2.6729 * var - 0.0332;
-  } else if (CarrierFreq > 17){
-    y = 1470.6* pow(var, 6)  - 1637.1* pow(var, 5)  + 760.78* pow(var, 4)  - 185.28* pow(var, 3)  + 24.292* pow(var, 2) + 0.9197 * var - 0.0112; 
-  } else if (CarrierFreq > 15){
-    y = 9672.8* pow(var, 6) - 13316* pow(var, 5) + 7238.6* pow(var, 4) - 1957.8* pow(var, 3) + 272.7* pow(var, 2) - 15.768* var + 0.4039;
-  } else if (CarrierFreq > 13){
-    y = 1847.9 * pow(var, 6) - 2732.2 * pow(var, 5) + 1609.3 * pow(var, 4) - 468.5 * pow(var, 3) + 68.616 * pow(var, 2) - 2.2219 * var + 0.0687;
-  } else if (CarrierFreq > 11){
-    y = 5199.7* pow(var, 6) - 6898.9* pow(var, 5) + 3558.4* pow(var, 4) - 896.44* pow(var, 3) + 113.95* pow(var, 2) - 4.5469* var + 0.116;
-  } else if (CarrierFreq > 8){
-    y = -1681.6* pow(var, 6) + 2924.7* pow(var, 5) - 1961.7* pow(var, 4) + 647.67* pow(var, 3) - 109.73* pow(var, 2) + 11.029* var - 0.2836;
-  } else if (CarrierFreq > 4){
-    y = 8869.8* pow(var, 6) - 12821* pow(var, 5) + 7328.2* pow(var, 4) - 2103.3* pow(var, 3) + 317* pow(var, 2) - 21.395* var + 0.6113;
+   if (CarrierFreq >= 20) {
+    y = 9.301427f * pow(var, 0) + -308.176376f * pow(var, 1) + 4039.717532f * pow(var, 2) + -26501.013301f * pow(var, 3) + 93304.042976f * pow(var, 4) + -168315.20379f * pow(var, 5) + 122254.461479f * pow(var, 6);
+  } else if (CarrierFreq >= 19) {
+    y = -3.320345f * pow(var, 0) + 101.822451f * pow(var, 1) + -1176.763585f * pow(var, 2) + 7065.253655f * pow(var, 3) + -22787.285224f * pow(var, 4) + 37591.509089f * pow(var, 5) + -24839.063207f * pow(var, 6);
+  } else if (CarrierFreq >= 18) {
+    y = 8.792781f * pow(var, 0) + -282.759749f * pow(var, 1) + 3596.250614f * pow(var, 2) + -22855.395361f * pow(var, 3) + 77879.964893f * pow(var, 4) + -135847.044576f * pow(var, 5) + 95324.463224f * pow(var, 6);
+  } else if (CarrierFreq >= 17) {
+    y = -3.346102f * pow(var, 0) + 101.980939f * pow(var, 1) + -1176.36442f * pow(var, 2) + 7047.066946f * pow(var, 3) + -22663.498433f * pow(var, 4) + 37243.837813f * pow(var, 5) + -24503.508623f * pow(var, 6);
+  } else if (CarrierFreq >= 16) {
+    y = -3.008409f * pow(var, 0) + 88.632867f * pow(var, 1) + -980.810058f * pow(var, 2) + 5655.154383f * pow(var, 3) + -17513.016706f * pow(var, 4) + 27716.387565f * pow(var, 5) + -17550.545824f * pow(var, 6);
+  } else if (CarrierFreq >= 15) {
+    y = -0.060197f * pow(var, 0) + 0.279033f * pow(var, 1) + 35.875356f * pow(var, 2) + -191.813155f * pow(var, 3) + 423.39103f * pow(var, 4) + -366.822358f * pow(var, 5) + 99.29789f * pow(var, 6);
+  } else if (CarrierFreq >= 14) {
+    y = 4.089715f * pow(var, 0) + -127.126002f * pow(var, 1) + 1569.663571f * pow(var, 2) + -9520.404993f * pow(var, 3) + 30802.186875f * pow(var, 4) + -50846.405468f * pow(var, 5) + 33695.568856f * pow(var, 6);
+  } else if (CarrierFreq >= 13) {
+    y = 3.022237f * pow(var, 0) + -92.265093f * pow(var, 1) + 1123.191539f * pow(var, 2) + -6657.270526f * pow(var, 3) + 21038.650836f * pow(var, 4) + -33941.110038f * pow(var, 5) + 22006.588135f * pow(var, 6);
+  } else if (CarrierFreq >= 12) {
+    y = -2.232815f * pow(var, 0) + 60.700642f * pow(var, 1) + -606.600882f * pow(var, 2) + 3184.893242f * pow(var, 3) + -8959.532032f * pow(var, 4) + 12835.542613f 
+* pow(var, 5) + -7319.909982f * pow(var, 6);
+  } else if (CarrierFreq >= 11) {
+    y = -3.130699f * pow(var, 0) + 85.620407f * pow(var, 1) + -878.186563f * pow(var, 2) + 4680.071726f * pow(var, 3) + -13389.180022f * pow(var, 4) + 19583.500802f * pow(var, 5) + -11477.292054f * pow(var, 6);
+  } else if (CarrierFreq >= 10) {
+    y = -1.369339f * pow(var, 0) + 39.372633f * pow(var, 1) + -395.438146f * pow(var, 2) + 2101.772381f * pow(var, 3) + -5933.912975f * pow(var, 4) + 8475.433518f * pow(var, 5) + -4792.839595f * pow(var, 6);
+  } else if (CarrierFreq >= 7) {
+    y = -2.618309f * pow(var, 0) + 64.987968f * pow(var, 1) + -595.494344f * pow(var, 2) + 2850.912448f * pow(var, 3) + -7297.861446f * pow(var, 4) + 9471.455161f * pow(var, 5) + -4853.243599f * pow(var, 6);
+  } else if (CarrierFreq >= 4) {
+    y = -1.993225f * pow(var, 0) + 45.790991f * pow(var, 1) + -361.608469f * pow(var, 2) + 1404.691632f * pow(var, 3) + -2524.88111f * pow(var, 4) + 1472.294393f * 
+pow(var, 5) + 488.81051f * pow(var, 6);
+  } else if (CarrierFreq >= 1) {
+    y = 0.383388f * pow(var, 0) + -14.067779f * pow(var, 1) + 229.381612f * pow(var, 2) + -1557.508197f * pow(var, 3) + 5463.946025f * pow(var, 4) + -9571.688094f * pow(var, 5) + 6632.155121f * pow(var, 6);
   } else {
-    y = 9551.3* pow(var, 6) - 14161* pow(var, 5) + 8363.2* pow(var, 4) - 2493.7* pow(var, 3) + 390.54* pow(var, 2) - 27.801* var + 0.8099;
+    y = 0.383388f * pow(var, 0) + -14.067779f * pow(var, 1) + 229.381612f * pow(var, 2) + -1557.508197f * pow(var, 3) + 5463.946025f * pow(var, 4) + -9571.688094f * pow(var, 5) + 6632.155121f * pow(var, 6);
   }
-  y = y >= 1.0f ? 1.0f : y;
+  if (y<=0) y = 0.1f;
   return y;
 }
-
 
 float calculateFMModulate(float var, uint16_t ModFreq) {
   float y = 0;
@@ -150,10 +164,22 @@ float calculateFMModulate(float var, uint16_t ModFreq) {
   return y;
 }
 
-float calculateFSKCoefficient(float var,uint16_t CarrierFreq){
+float calculateFSKShift(float var, uint16_t CarrierFreq) {
   float y = 0;
-
-  return y;
+  if (CarrierFreq >= 5000) {
+    y = -0.571193f * pow(var, 0) + 0.005801f * pow(var, 1);
+  } else if (CarrierFreq >= 4000) {
+    y = -0.438888f * pow(var, 0) + 0.005684f * pow(var, 1);
+  } else if (CarrierFreq >= 3000) {
+    y = -0.169359f * pow(var, 0) + 0.005923f * pow(var, 1);
+  } else if (CarrierFreq >= 2000) {
+    y = -0.25069f * pow(var, 0) + 0.00769f * pow(var, 1);
+  } else if (CarrierFreq >= 1000) {
+    y = -1.179814f * pow(var, 0) + 0.015145f * pow(var, 1);
+  } else {
+    y = -1.179814f * pow(var, 0) + 0.015145f * pow(var, 1);
+  }
+  return y/2;
 }
 
 #define CW_TYPE 0

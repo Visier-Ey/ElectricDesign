@@ -42,7 +42,7 @@ def fit_data(data_dict, degree):
             # 只使用非零数据点进行拟合
             if y_val != 0:
                 x.append(x_val)
-                y.append(y_val)
+                y.append(y_val/100)
         
         # 如果有足够的数据点进行拟合
         if len(x) > degree and len(y) > degree:

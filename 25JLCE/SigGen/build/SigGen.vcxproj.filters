@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Storehouse\Code\C &amp; C++\RIGOL AutoMeasure by Isaac\SigGen\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Storehouse\Code\C &amp; C++\RIGOL AutoMeasure by Isaac\SigGen\serial.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Storehouse\Code\C &amp; C++\RIGOL AutoMeasure by Isaac\SigGen\DG4202.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Storehouse\Code\C &amp; C++\RIGOL AutoMeasure by Isaac\SigGen\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{14C1BDC1-E548-3F24-A390-024C3A0F8A96}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
